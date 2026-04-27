@@ -1,5 +1,6 @@
 import AllCategory from "@/components/homepage/AllCategory";
 import LogoWith from "@/components/homepage/LogoWith";
+import SingleNews from "@/components/homepage/SingleNews";
 
 const getData= async()=>{
   const res= await fetch('https://openapi.programming-hero.com/api/news/categories')
@@ -36,7 +37,7 @@ const CategoriId = async({params}) => {
      <div className="col-span-4">
         <h2 className="text-2xl font-bold mb-3">News</h2>
         {
-         nwesData.data.length>0 ? nwesData.data.map((news , index) => <div key={index}>{news.title}</div>):(<div className="flex justify-center items-center "> 
+         nwesData.data.length>0 ? nwesData.data.map((news , index) => <SingleNews key={index} news={news}></SingleNews>):(<div className="flex justify-center items-center "> 
          <h2 className="font-bold text-4xl mt-20">News is Cooking...</h2>
          </div>)
         }
