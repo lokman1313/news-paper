@@ -1,5 +1,5 @@
 
-const page = () => {
+const AboutPage = () => {
     return (
         <div>
             <h2>this is about us </h2>
@@ -7,4 +7,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default AboutPage;
