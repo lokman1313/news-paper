@@ -25,7 +25,7 @@ const CategoriId = async({params}) => {
 
  
   return (
-    <div className="grid grid-cols-8 gap-2">
+    <div className="grid grid-cols-1 md:grid-cols-8 gap-2">
      <div className="col-span-2 ">
       <h2 className="text-2xl font-bold mb-3">
       Category
